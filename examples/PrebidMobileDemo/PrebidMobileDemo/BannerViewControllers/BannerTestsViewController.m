@@ -37,6 +37,9 @@
 }
 
 - (void)viewDidLoad {
+    GADDebugOptionsViewController *debugOptionsViewController =
+        [GADDebugOptionsViewController debugOptionsViewControllerWithAdUnitID:kDFPBannerAdUnitId];
+    [self presentViewController:debugOptionsViewController animated:YES completion:nil];
     [super viewDidLoad];
 }
 

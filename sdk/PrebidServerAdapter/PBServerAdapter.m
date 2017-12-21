@@ -70,7 +70,8 @@ static NSString *const kPrebidMobileVersion = @"0.1.1";
 }
 
 - (NSURLRequest *)buildRequestForAdUnits:(NSArray<PBAdUnit *> *)adUnits {
-    NSURL *url = [NSURL URLWithString:@"https://prebid.adnxs.com/pbs/v1/auction"];
+    /*NSURL *url = [NSURL URLWithString:@"https://prebid.adnxs.com/pbs/v1/auction"];*/
+    NSURL *url = [NSURL URLWithString:@"http://mike.pubmatic.com:8000/auction"];
     NSMutableURLRequest *mutableRequest = [[NSMutableURLRequest alloc] initWithURL:url
                                                                        cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
                                                                    timeoutInterval:1000];
